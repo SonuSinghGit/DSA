@@ -9,3 +9,13 @@
 // Example 2:
 // Input: nums = [4,1,2,1,2]
 // Output: 4
+
+function singleNumber(nums){
+    let singleNumber = 0;
+    for(let i=0;i<nums.length;i++){
+        singleNumber = singleNumber ^ nums[i]; // 0^2=2, 2^2=0, 0^1=1
+    }
+    return singleNumber
+}
+console.log(singleNumber([2,2,1]));// 1
+console.log(singleNumber([4,1,2,1,2])); // 4
