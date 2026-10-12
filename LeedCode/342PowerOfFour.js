@@ -13,3 +13,13 @@
 
 // Input: n = 1
 // Output: true
+
+function powerOfFour(n){
+    if(n<=0) return false
+    while(n%4===0){
+        n = n/4;
+    }
+    return n===1;
+}
+console.log(powerOfFour(16)); // true
+console.log(powerOfFour(53)); // false

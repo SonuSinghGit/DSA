@@ -15,3 +15,14 @@
 // Input: n = -1
 // Output: false
 // Explanation: There is no x where 3x = (-1).
+
+function powerOfThree(n){
+    if(n<=0) return false
+    while(n%3===0){
+        n= n/3;
+    }
+    return n === 1;
+}
+console.log(powerOfThree(27)); // true
+console.log(powerOfThree(65)); // false
+console.log(powerOfThree(81)); // true
