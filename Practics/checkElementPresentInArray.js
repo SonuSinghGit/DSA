@@ -1,6 +1,6 @@
 const arr = [23,45,56,"Hello",{name:"sonu"},[45,56,78]];
 
-function checkElement(arr,target){
+function checkElement(arr=[],target){
     for(let i=0;i<arr.length;i++){
         if(arr[i]===target){
             return true
@@ -9,5 +9,6 @@ function checkElement(arr,target){
     return false;
 }
 
-console.log(checkElement(arr,"Hello"));
+console.log(checkElement(arr,"Hello")); // true
+console.log(checkElement(arr,23)); // false
 
