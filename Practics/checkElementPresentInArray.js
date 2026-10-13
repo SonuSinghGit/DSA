@@ -9,6 +9,16 @@ function checkElement(arr=[],target){
     return false;
 }
 
-console.log(checkElement(arr,"Hello")); // true
-console.log(checkElement(arr,23)); // false
+// console.log(checkElement(arr,"Hello")); // true
+// console.log(checkElement(arr,23)); // false
 
+
+function checkElementPresentInArray(arr,target){
+    for(let i=0; i<arr.length;i++){
+        if(arr[i]=== target){
+            return i + arr [i]
+        }
+    }
+    return false;
+}
+console.log(checkElementPresentInArray(arr,"Hello"));
