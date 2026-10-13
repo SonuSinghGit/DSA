@@ -9,8 +9,8 @@ function checkElement(arr=[],target){
     return false;
 }
 
-// console.log(checkElement(arr,"Hello")); // true
-// console.log(checkElement(arr,23)); // false
+console.log(checkElement(arr,"Hello")); // true
+console.log(checkElement(arr,23)); // false
 
 
 function checkElementPresentInArray(arr,target){

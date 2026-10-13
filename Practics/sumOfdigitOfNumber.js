@@ -9,7 +9,7 @@ function sumofDigitOfNumber(num){
     let sum = 0;
     while(num>0){
         let digit = num % 10 // hame har bar ek digit mil jayega
-        sum = sum + digit;
+        sum = sum + digit; // 0=0+1=1
         num = Math.floor(num/10)// har bar num ko divide kar ke ek ek kam karenge.
     }
 
